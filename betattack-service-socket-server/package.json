@@ -1,0 +1,32 @@
+{
+  "name": "service-dbmanager",
+  "version": "1.0.0",
+  "description": "Database manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/com/pkt/betattack/socket/server/index.js",
+    "start:dev": "env-cmd -f ./config/server.env nodemon src/com/pkt/betattack/socket/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://shikofx@bitbucket.org/betattack/service-money-manager.git"
+  },
+  "keywords": [
+    "login",
+    "logout",
+    "database"
+  ],
+  "author": "Dzmitry Parkheichuk <shikofx@yandex.ru>",
+  "license": "ISC",
+  "homepage": "https://shikofx@bitbucket.org/betattack/service-money-manager#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1",
+    "nodemon": "^2.0.4"
+  }
+}

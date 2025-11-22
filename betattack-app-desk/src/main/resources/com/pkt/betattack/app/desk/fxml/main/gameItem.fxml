@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<BorderPane minWidth="650.0" prefHeight="55.0" prefWidth="785.0"
+            style="-fx-border-color: #E6F5FD; -fx-background-color: #FDF5E6;" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.pkt.betattack.app.desk.controllers.main.GameItemController">
+    <userData>
+        <fx:reference source="controller"></fx:reference>
+    </userData>
+    <top>
+        <VBox fx:id="gameBox" stylesheets="@../../css/fullpackstyling.css" BorderPane.alignment="TOP_CENTER">
+            <children>
+                <GridPane fx:id="gameGrid" prefHeight="32.0" prefWidth="693.0" style="-fx-border-color: #F6FBFE;"
+                          stylesheets="@../../css/fullpackstyling.css" VBox.vgrow="ALWAYS">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308"
+                                           minWidth="150.0" prefWidth="275.0"/>
+                        <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="88.0" minWidth="70.0"
+                                           prefWidth="88.0"/>
+                        <ColumnConstraints halignment="RIGHT" hgrow="NEVER" maxWidth="150.0" minWidth="106.0"
+                                           prefWidth="106.0"/>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="24.0" minWidth="10.0"
+                                           prefWidth="11.0"/>
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="133.0" minWidth="110.0"
+                                           prefWidth="110.0"/>
+                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="103.0" minWidth="80.0"
+                                           prefWidth="85.0"/>
+                        <ColumnConstraints halignment="RIGHT" hgrow="NEVER" maxWidth="98.0" minWidth="80.0"
+                                           prefWidth="98.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Hyperlink fx:id="championship" onAction="#openChampionship"
+                                   text="Championship Championship Championship Championship Championship"
+                                   textFill="#4e9d67" wrapText="true"/>
+                        <Text fx:id="timer" fill="#72156f" strokeType="OUTSIDE" strokeWidth="0.0" text="/---/"
+                              textAlignment="CENTER" textOrigin="CENTER" underline="true" wrappingWidth="97.0"
+                              GridPane.columnIndex="6">
+                            <font>
+                                <Font name="System Bold" size="12.0"/>
+                            </font>
+                        </Text>
+                        <Text fx:id="teamFirst" fill="#831818" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Игрок 1&#10;0" textAlignment="RIGHT" textOrigin="TOP" GridPane.columnIndex="2"
+                              GridPane.halignment="RIGHT"/>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":&#10;:" textAlignment="RIGHT"
+                              textOrigin="TOP" GridPane.columnIndex="3"/>
+                        <Text fx:id="teamSecond" fill="#1f10a4" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Игрок 2&#10;2" textOrigin="TOP" GridPane.columnIndex="4"
+                              GridPane.halignment="LEFT"/>
+                        <Text fx:id="startGame" fill="#083c17" stroke="#da6565" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="20.06.2020&#10;16:30" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="76.0"
+                              GridPane.columnIndex="5"/>
+                        <Hyperlink fx:id="gameLink" onAction="#openGame" prefHeight="23.0" prefWidth="121.0"
+                                   text="Открыть игру" textAlignment="RIGHT" textFill="#4e9d67" wrapText="true"
+                                   GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
+                    </children>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </GridPane>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </top>
+    <center>
+        <VBox fx:id="betsBox" prefHeight="10.0" prefWidth="642.0" spacing="2.0" style="-fx-background-color: #FAE2B5;"
+              BorderPane.alignment="CENTER_LEFT">
+            <BorderPane.margin>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="2.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </center>
+    <opaqueInsets>
+        <Insets/>
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+    </padding>
+</BorderPane>

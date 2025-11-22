@@ -1,0 +1,35 @@
+{
+  "championship": {
+    "name": "Футбол. Португалия. Примейра-лига.",
+    "url": "http://betcity.by/ru/live/soccer/1324"
+  },
+  "teamFirst": {
+    "name": "Авеш",
+    "score": 0
+  },
+  "teamSecond": {
+    "name": "Морейренсе",
+    "score": 1
+  },
+  "date": "2020-06-29T17:28:05.223Z",
+  "_id": "5efa24b6d7b08f00174c65c1",
+  "serverName": "betcity",
+  "url": "http://betcity.by/ru/live/soccer/1324/7115272",
+  "isFinished": true,
+  "startTime": "19:00 ",
+  "timer": "84:47",
+  "bets": {
+    "totalPenalty": {
+      "value": [
+        {
+          "3847": 0.5
+        }
+      ],
+      "less": [
+        {
+          "3847": 1.17
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# Log file
+*.log
+
+# Package Files #
+*.jar
+
+# GENERATED FILES
+*/build
+build
+*/out
+
+# User-specific stuff
+*/.idea/
+.idea/
+
+# GRADLE #
+/.gradle/
+gradlew
+gradlew.bat
+!*/build.gradle
+!*/settings.gradle
+local_history.patch
+/gradle/

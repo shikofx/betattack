@@ -1,0 +1,57 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+    id 'edu.sc.seis.launch4j' version '2.4.6'
+    id "org.springframework.boot" version "2.2.4.RELEASE"
+}
+
+javafx {
+    version = "16"
+    modules = ['javafx.controls', 'javafx.graphics', 'javafx.fxml', 'javafx.web']
+}
+
+group "$applicationGroup"
+version "$applicationVersion"
+
+wrapper {
+    gradleVersion = '5.4'
+}
+
+repositories {
+    jcenter()
+    mavenLocal()
+    mavenCentral()
+    maven {
+        url 'http://nexus.gluonhq.com/nexus/content/repositories/releases'
+    }
+}
+
+dependencies {
+    compile group: 'org.openjfx', name: 'javafx-web', version: '16'
+    compile group: 'io.socket', name: 'socket.io-client', version: '1.0.0'
+    compile 'org.openjfx:javafx-web:14'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    compile 'de.jensd:fontawesomefx-commons:9.0.0'
+    compile 'de.jensd:fontawesomefx-fontawesome:4.7.0-9'
+    compile 'com.gluonhq:charm-glisten:6.0.6'
+
+    // retrofit
+    compile group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.7.1'
+    compile group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.7.1'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.0.0")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.0.0")
+}
+
+mainClassName = "com.pkt.betattack.app.desk.Main"
+
+run {
+    jvmArgs = ["--add-opens", "javafx.graphics/javafx.css=ALL-UNNAMED", "--add-modules", "javafx.controls,javafx.fxml"]
+}
+
+launch4j {
+    outfile = "betattack.exe"
+    icon = "${projectDir}/icons/betting.ico"
+}
+

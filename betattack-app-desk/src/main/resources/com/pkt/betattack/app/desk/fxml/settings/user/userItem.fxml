@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="userItemPane" maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="560.0" prefHeight="40.0" prefWidth="560.0" style="-fx-background-radius: 1em;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pkt.betattack.app.desk.controllers.settings.user.UserItemController">
+   <userData>
+      <fx:reference source="controller"></fx:reference>
+   </userData>
+   <children>
+      <VBox fx:id="userTableItemBox" alignment="CENTER" maxHeight="40.0" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="560.0" prefHeight="40.0" prefWidth="880.0" style="-fx-background-radius: 0.8em; -fx-background-color: #FBEBC1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane fx:id="userItemGrid" alignment="CENTER" onMouseClicked="#clickOnGrid" style="-fx-background-color: #FBEBC1; -fx-border-color: #FBEB22;">
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="160.0" prefWidth="160.0" />
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="168.0" prefWidth="168.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="112.0" prefWidth="112.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="112.0" prefWidth="112.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" GridPane.columnIndex="3">
+                     <children>
+                        <Text fx:id="userItemUpdateDate" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="22.04.2020" textAlignment="CENTER" wrappingWidth="100.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Text fx:id="userItemName" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets left="8.0" right="8.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS">
+                     <children>
+                        <Text fx:id="userItemEmail" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Ivan@gmail.com" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="8.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                     <children>
+                        <Text fx:id="userItemCreateDate" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="22.03.2020" textAlignment="CENTER" wrappingWidth="83.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" />
+               </VBox.margin>
+               <effect>
+                  <Blend />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </GridPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </VBox>
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>

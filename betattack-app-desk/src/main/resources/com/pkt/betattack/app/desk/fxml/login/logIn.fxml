@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #0D94DD; -fx-background-radius: 1em; -fx-border-radius: 1em;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pkt.betattack.app.desk.controllers.login.LoginController">
+    <children>
+        <AnchorPane layoutY="68.0" prefHeight="332.0" prefWidth="706.0" style="-fx-background-color: #23AAF2; -fx-background-radius: 1em;">
+            <children>
+                <TextField fx:id="emailInput" layoutX="209.0" layoutY="74.0" onKeyTyped="#emailTypeText" prefHeight="39.0" prefWidth="307.0" promptText="my@email.com" style="-fx-background-color: #fae2b5; -fx-border-color: silver; -fx-border-radius: 3; -fx-border-width: 1;">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="submitButton" defaultButton="true" layoutX="294.0" layoutY="266.0" mnemonicParsing="false" onAction="#submitButtonClick" prefHeight="35.0" prefWidth="137.0" text="Вход" textFill="#1b1a1a" textOverrun="WORD_ELLIPSIS" underline="true">
+                    <font>
+                        <Font name="Book Antiqua" size="16.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <PasswordField fx:id="passwordInput" layoutX="209.0" layoutY="150.0" onKeyTyped="#passwordTypeText" prefHeight="42.0" prefWidth="307.0" promptText="Password" style="-fx-background-color: #fae2b5; -fx-border-radius: 3; -fx-border-color: silver; -fx-border-width: 1;">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </PasswordField>
+                <Label fx:id="emailWarningLabel" cacheShape="false" focusTraversable="false" layoutX="209.0" layoutY="115.0" prefHeight="25.0" prefWidth="307.0" text="* - you should enter correct email" textFill="#d40d0d" visible="false" />
+                <Label fx:id="passwordWarningLabel" cacheShape="false" focusTraversable="false" layoutX="209.0" layoutY="194.0" prefHeight="25.0" prefWidth="307.0" text="* - tou should enter correct password" textFill="#d40d0d" visible="false" />
+            <Label fx:id="loginWarningLabel" alignment="BASELINE_CENTER" cacheShape="false" contentDisplay="CENTER" focusTraversable="false" layoutX="16.0" layoutY="14.0" prefHeight="51.0" prefWidth="673.0" textAlignment="CENTER" textFill="#d40d0d" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="savePasswordCheckBox" layoutX="209.0" layoutY="219.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="307.0" text="   Сохранить пароль">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </CheckBox>
+            </children>
+        </AnchorPane>
+      <FontAwesomeIconView fx:id="logoIcon" fill="#fae2b5" glyphName="XING" layoutX="14.0" layoutY="53.0" size="40" />
+      <Label fx:id="logoText" layoutX="52.0" layoutY="21.0" text="PKT Group" textFill="#fae2b5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="appText" layoutX="640.0" layoutY="21.0" text="BETS" textFill="#fae2b5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

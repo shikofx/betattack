@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "dbmanager",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "PORT": 3000,
+                "JWT_SECRET": "betattackapplication",
+                "MONGODB_URL": "mongodb+srv://betattack:rfr3t2f_RFR5@betattack-byqzl.mongodb.net/betattack-api?retryWrites=true"
+            },
+            "program": "${workspaceFolder}\\src\\com\\pkt\\betattack\\service\\dbmanager\\index.js"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "betcit",
+  "URLs": [{
+    "baseUrl": "http://betcity.by",
+    "liveUrl": "http://betcity.by/live",
+    "lineUrl": "http://betcity.by/line",
+    "paramInit": "?",
+    "paramSeparator": "&",
+    "params": [
+      {
+        "name": "football",
+        "value": "sp[]=1"
+      },
+      {
+        "name": "tennis",
+        "value": "sp[]=2"
+      },
+      {
+        "name": "basketball",
+        "value": "sp[]=3"
+      },
+      {
+        "name": "ice-hockey",
+        "value": "sp[]=7"
+      },
+      {
+        "name": "volleyball",
+        "value": "sp[]=12"
+      }
+    ]
+  }],
+  "locators": {
+    "profile": {
+      "signIn": {
+        "initFormButton": ".user-auth-block [href*='login']",
+        "userNameInput": "input[name='login']",
+        "userPasswordInput": "input[name='pass']",
+        "saveCheckBox": ".login-save",
+        "submitButton": ".login__submit"
+      },
+      "account":{
+        "infobox": ".user-info",
+        "loginName": "",
+        "accountNumber": "",
+        "accountBalance": "",
+        "currentBetsBalance": ""
+      }
+    }
+  }
+}

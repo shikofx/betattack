@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+dependencies{
+    compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    compile group: 'com.opencsv', name: 'opencsv', version: '4.6'
+}
+
+

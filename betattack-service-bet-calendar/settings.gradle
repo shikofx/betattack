@@ -1,0 +1,3 @@
+rootProject.name = 'service-bet-calendar'
+include 'ws-spy'
+

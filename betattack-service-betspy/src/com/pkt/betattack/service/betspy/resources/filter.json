@@ -1,0 +1,15 @@
+{
+    "server": "betcity",
+    "awakeMinutes": 5,
+    "startSleepHour": 2,
+    "finishSleepHour": 7,
+    "hoursAgo": 60,
+    "sports": [{
+        "kind": "football",
+        "bets": {
+            "totalPenalty": [ "value", "less" ]                
+        }
+    }
+    
+]
+}

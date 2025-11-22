@@ -1,0 +1,60 @@
+{
+    "name": "championatRU",
+    "urls": {
+        "links": {
+            "baseUrl": "https://www.championat.com/stat"            
+        },
+        "filter": {
+            "datefilter": "/#",
+           "sports": {
+                "name": "kinds-of-sport",
+                "items": {
+                    "football": "football",
+                    "tennis": "tennis",
+                    "iceHockey": "hockey",
+                    "volleyball": "volleyball"
+                }
+            }
+        }
+    },
+    "selectors": {
+        "statChamp": {
+            "elements": {
+                "football": {
+                    "selector": "//*[@class='line__champ' and contains(., 'Футбол') and not(contains(., 'Статистика'))]",
+                    "type": "XPATH"
+                },
+                "iceHockey": {
+                    "selector": "//*[@class='line__champ' and contains(., 'Хоккей') and not(contains(., 'Статистика'))]",
+                    "type": "XPATH"
+                },
+                "name": {
+                    "selector": ".line-champ__header-name"
+                },
+                "url": {
+                    "selector": ".line-champ__header-name a"
+                }
+            }
+        },
+        "statGame": {
+            "selector": "app-event-unit",
+            "elements": {
+                "url": {
+                    "selector": ".line-event__name a"
+                },
+                "teams": {
+                    "selector": ".line-event__name-team div"
+                },
+                "start": {
+                    "selector": ".line-event__time-static"
+                },
+                "timer": {
+                    "selector": ".line-event__time-timer"
+                },
+                "score": {
+                    "selector": ".line-event__score-total"
+                }
+            }
+        }
+    }
+}

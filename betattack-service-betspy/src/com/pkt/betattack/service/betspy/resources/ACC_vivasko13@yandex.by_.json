@@ -1,0 +1,21 @@
+[
+    {
+        "_id": "5f65202625a39d0017b1e5eb",
+        "login": "bevivak",
+        "id_number": "10237449",
+        "password": "2bKiBBpK33",
+        "owner": "5f651fbd25a39d0017b1e5ea",
+        "server": "5ee7ad2a68fb950017758b36",
+        "spyAddress": [
+            {
+                "_id": "5f92b86ab820ec0017e75804",
+                "ip": "86.57.255.94",
+                "port": 3504
+            }
+        ],
+        "createdAt": "2020-09-18T21:01:26.336Z",
+        "updatedAt": "2020-10-23T11:03:06.190Z",
+        "__v": 2,
+        "attacks": []
+    }
+]

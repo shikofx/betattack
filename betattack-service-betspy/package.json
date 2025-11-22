@@ -1,0 +1,36 @@
+{
+    "name": "service-betspy",
+    "version": "1.0.0",
+    "license": "ISC",
+    "description": "Getting events data from bet servers",
+    "main": "src/com/pkt/betattack/service/betspy/index.js",
+    "scripts": {
+        "start": "node src/com/pkt/betattack/service/betspy/index.js",
+        "start:attack": "env-cmd -f ./config/attack.env node src/com/pkt/betattack/service/betspy/index.js",
+        "start:attack_tor": "env-cmd -f ./config/attack_tor.env node src/com/pkt/betattack/service/betspy/index.js",
+        "start:live": "env-cmd -f ./config/live.env node src/com/pkt/betattack/service/betspy/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://shikofx@bitbucket.org/betattack/service-betspy.git"
+    },
+    "keywords": [
+        "bet",
+        "spy",
+        "scraping"
+    ],
+    "author": "Dzmitry Parkheichuk <shikofx@gmail.com>",
+    "homepage": "https://bitbucket.org/betattack/service-betspy#readme",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "express": "^4.17.1",
+        "public-ip": "^4.0.2",
+        "puppeteer": "^5.2.1",
+        "puppeteer-core": "^5.1.0",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "env-cmd": "^10.1.0",
+        "nodemon": "^2.0.4"
+    }
+}

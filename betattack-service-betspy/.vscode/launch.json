@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "live",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "env": {
+                "NODE_ENV": "debug",
+                "PORT": "3102",
+                "BROWSER": "chromium",
+                "URL_DBMANAGER_HOST": "http://185.92.150.218:3000",
+                "BETSERVER": "betcity.by",
+                "SERVICE": "live",
+                "SHOW_BROWSER": "true",
+                "ECONOMY_MODE": "true",
+            },
+            "program": "${workspaceFolder}\\src\\com\\pkt\\betattack\\service\\betspy\\index.js"
+        } 
+        
+    ]
+}

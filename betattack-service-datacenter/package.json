@@ -1,0 +1,17 @@
+{
+  "name": "unified-spy",
+  "version": "1.0.0",
+  "description": "Using socket and REST API for communication. Using separate page for each game",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-cron": "^3.0.0",
+    "puppeteer": "^9.1.1",
+    "puppeteer-core": "^9.1.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {}
+}
